@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>haloo</title>
+  </head>
+  <body class="font-poppins">
+    <header>
+      <nav class="fixed top-0 w-full z-50">
+        <div class="navbar bg-blue-900 shadow-md z-50 py-5 px-[3%]">
+          <div class="navbar-start">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden" id="menuButton">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <a class="btn btn-ghost text-3xl font-bold text-white">Quake Watch</a>
+          </div>
+          <div class="navbar-end flex items-center pr-10">
+            <div class="hidden lg:flex">
+              <ul
+                class="menu menu-horizontal px-1 gap-4 text-white font-bold text-lg max-lg:text-base"
+              >
+                <li class=""><a>Home</a></li>
+                <li class=""><a href="">Maps</a></li>
+                <li class=""><a>Donasi</a></li>
+                <li class=""><a>Blog</a></li>
+                <li>
+                  <a
+                    class="hidden lg:flex ml-2 px-3 py-2 bg-white border-none hover:bg-slate-500 hover:text-white text-blue-900 text-lg font-bold rounded-xl duration-500 ease-in-out items-center justify-center cursor-pointer"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Background overlay -->
+        <div
+          class="fixed top-0 left-0 h-full w-full bg-black bg-opacity-70 backdrop-blur-md z-40 hidden lg:hidden"
+          id="sidebarOverlay"
+        ></div>
+        <!-- Sidebar -->
+        <div
+          class="fixed top-0 left-0 h-full w-72 bg-blue-900 text-white z-50 transform transition-transform duration-300 ease-in-out -translate-x-full lg:hidden"
+          id="sidebar"
+        >
+          <div class="mt-5 text-center">
+            <a class="btn btn-ghost text-3xl font-bold text-white mb-3">Quake Watch</a>
+          </div>
+          <hr class="border-blue-600" />
+          <ul class="pt-5 font-bold text-xl">
+            <li class="">
+              <a href="#" class="flex items-center text-white py-6 px-6 hover:btn-ghost">
+                <ion-icon name="home-outline" class="text-white mr-2"></ion-icon>
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-white py-6 px-6 flex items-center hover:btn-ghost"
+                ><ion-icon name="map-outline" class="text-white mr-2"></ion-icon> Maps</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white py-6 px-6 flex items-center hover:btn-ghost"
+                ><ion-icon name="heart-half-outline" class="text-white mr-2"></ion-icon>Donasi</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white py-6 px-6 flex items-center hover:btn-ghost"
+                ><ion-icon name="newspaper-outline" class="text-white mr-2"></ion-icon>Blog</a
+              >
+            </li>
+            <p class="pl-3 text-base mt-5">User</p>
+            <hr class="border-blue-500 w-64" />
+            <li>
+              <a href="#" class="text-white py-6 px-6 flex items-center hover:btn-ghost"
+                ><ion-icon name="log-in-outline" class="text-white mr-2"></ion-icon>Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Article -->
+    <div class="my-32 flex justify-center w-full">
+      <div class="">
+        <div class="mx-[28%] max-md:mx-[5%] max-lg:mx-[10%]">
+          <p class="text-center font-extrabold text-3xl text-black leading-8 max-sm:text-2xl">
+            Gempa Hari Ini Sabtu 18 Mei 2024 di Indonesia Bermagnitudo 3,5 Getarkan Sumedang, Jabar
+          </p>
+          <p class="text-sm py-3 text-black">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla laborum voluptas
+            maxime? Provident odio aperiam accusantium similique dolores illum.
+          </p>
+          <div class="w-full h-80 overflow-hidden rounded-lg max-sm:h-auto">
+            <img src="img/sumedang.jpg" alt="" />
+          </div>
+          <p class="text-black mt-3">
+            Pada akhir pekan hari ini, Sabtu (18/5/2024) lindu kembali menggetarkan Bumi Pertiwi.
+            Hingga pukul 20.00 WIB, hanya terjadi satu gempa hari ini di Indonesia.
+            <br />Berdasarkan laporan Badan Meteorologi, Klimatologi, dan Geofisika (BMKG) melalui
+            laman resminya www.bmkg.go.id, lindu tersebut menggetarkan dini hari tadi pukul 02:54:53
+            WIB di Kabupaten Sumedang, Provinsi Jawa Barat (Jabar).
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
